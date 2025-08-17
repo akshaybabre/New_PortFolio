@@ -16,26 +16,26 @@ export const Hero = () => {
         { opacity: 0, y: 100, scale: 0.8 },
         { opacity: 1, y: 0, scale: 1, duration: 1.5, ease: 'power4.out' }
       )
-      .fromTo('.hero-subtitle',
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' }, '-=0.8'
-      )
-      .fromTo('.hero-description',
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }, '-=0.6'
-      )
-      .fromTo('.hero-buttons',
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }, '-=0.4'
-      )
-      .fromTo('.hero-social',
-        { opacity: 0, x: -30 },
-        { opacity: 1, x: 0, duration: 0.8, ease: 'power2.out', stagger: 0.1 }, '-=0.6'
-      )
-      .fromTo('.hero-image',
-        { opacity: 0, scale: 0.8, rotation: -10 },
-        { opacity: 1, scale: 1, rotation: 0, duration: 1.2, ease: 'back.out(1.7)' }, '-=1'
-      );
+        .fromTo('.hero-subtitle',
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' }, '-=0.8'
+        )
+        .fromTo('.hero-description',
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }, '-=0.6'
+        )
+        .fromTo('.hero-buttons',
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }, '-=0.4'
+        )
+        .fromTo('.hero-social',
+          { opacity: 0, x: -30 },
+          { opacity: 1, x: 0, duration: 0.8, ease: 'power2.out', stagger: 0.1 }, '-=0.6'
+        )
+        .fromTo('.hero-image',
+          { opacity: 0, scale: 0.8, rotation: -10 },
+          { opacity: 1, scale: 1, rotation: 0, duration: 1.2, ease: 'back.out(1.7)' }, '-=1'
+        );
 
       // Continuous floating animation
       gsap.to('.hero-image', {
@@ -70,10 +70,10 @@ export const Hero = () => {
 
   const handleContactClick = () => {
     showToast.info('Scrolling to contact section...', 2000);
-    const contactSection = document.querySelector('#contact') || 
-                          document.querySelector('[data-section="contact"]') ||
-                          document.querySelector('.contact-section');
-    
+    const contactSection = document.querySelector('#contact') ||
+      document.querySelector('[data-section="contact"]') ||
+      document.querySelector('.contact-section');
+
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     } else {
@@ -83,8 +83,8 @@ export const Hero = () => {
   };
 
   return (
-    <section 
-      ref={heroRef} 
+    <section
+      ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-cyan-50 dark:from-gray-900 dark:via-indigo-900/20 dark:to-gray-900"
     >
       {/* Background decorations */}
@@ -105,7 +105,7 @@ export const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full transform rotate-6 scale-110 opacity-20"></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full transform -rotate-12 scale-95 opacity-20"></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-indigo-400 rounded-full transform rotate-3 scale-105 opacity-20"></div>
-                
+
                 {/* Main image container */}
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
                   <img
@@ -116,7 +116,7 @@ export const Hero = () => {
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
-                
+
                 {/* Floating badges */}
                 <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 glass-effect p-2 sm:p-3 rounded-xl">
                   <span className="text-lg sm:text-2xl">💻</span>
@@ -140,11 +140,11 @@ export const Hero = () => {
                   {portfolioConfig.personal.name.split(' ')[0]}
                 </span>
               </h1>
-              
+
               <h2 className="hero-subtitle text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-200 dark:to-white bg-clip-text text-transparent text-center lg:text-left">
                 {portfolioConfig.personal.title}
               </h2>
-              
+
               <p className="hero-description text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-full sm:max-w-2xl leading-relaxed text-center lg:text-left">
                 {portfolioConfig.personal.subtitle}
               </p>
@@ -152,14 +152,17 @@ export const Hero = () => {
 
             {/* Action Buttons */}
             <div className="hero-buttons flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start">
-              <button
-                onClick={handleDownloadCV}
+              <a
+                href={portfolioConfig.personal.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-2xl font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center space-x-3 pulse-effect text-sm sm:text-base"
               >
                 <Download className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
                 <span>Download CV</span>
-              </button>
-              
+              </a>
+
+
               <button
                 onClick={handleContactClick}
                 className="group glass-effect text-gray-900 dark:text-white px-6 py-3 sm:px-8 sm:py-4 rounded-2xl font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center space-x-3 text-sm sm:text-base"
