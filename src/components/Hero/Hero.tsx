@@ -134,12 +134,15 @@ export const Hero = () => {
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-8 order-last lg:order-first">
             <div className="space-y-4 sm:space-y-6">
-              <h1 className="hero-title text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-center lg:text-left">
+              <h1
+                className="hero-title text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-center lg:text-left focus:outline-none focus:ring-0"
+              >
                 <span className="block text-gray-900 dark:text-white">Hi, I'm</span>
                 <span className="block text-gradient-animate">
                   {portfolioConfig.personal.name.split(' ')[0]}
                 </span>
               </h1>
+
 
               <h2 className="hero-subtitle text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-200 dark:to-white bg-clip-text text-transparent text-center lg:text-left">
                 {portfolioConfig.personal.title}
