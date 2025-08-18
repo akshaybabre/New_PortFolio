@@ -232,8 +232,6 @@ export const Contact = () => {
 
   const stats = [
     { icon: Zap, value: '24h', label: 'Response Time' },
-    { icon: Heart, value: '100+', label: 'Happy Clients' },
-    { icon: Star, value: '5.0', label: 'Rating' },
     { icon: Coffee, value: '∞', label: 'Coffee Cups' },
   ];
 
