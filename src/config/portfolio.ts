@@ -16,7 +16,7 @@ export const portfolioConfig = {
     github: "https://github.com/akshaybabre",
     linkedin: "https://linkedin.com/in/akshaybabre",
     twitter: "https://twitter.com/akshaybabre",
-    instagram: "https://instagram.com/akshaybabre8"
+    instagram: "https://instagram.com/akshaybabre7"
   },
 
   education: {
