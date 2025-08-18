@@ -53,7 +53,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="nav-item group">
+          <Link to="/" className="nav-item group focus:outline-none">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-500 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white font-bold text-xl">
@@ -78,7 +78,7 @@ export const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`nav-item px-4 py-2 rounded-xl flex items-center space-x-2 transition-all duration-300 group ${
+                  className={`nav-item px-4 py-2 rounded-xl flex items-center space-x-2 transition-all duration-300 group  ${
                     isActive
                       ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg'
                       : 'text-gray-700 dark:text-gray-200 hover:bg-purple-100 dark:hover:bg-purple-900/30'
