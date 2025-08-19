@@ -380,13 +380,13 @@ export const Home = () => {
               </div>
               <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 text-center border border-white/20 dark:border-gray-700/30 hover:scale-105 transition-all duration-300">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent mb-1 sm:mb-2">
-                  5+
+                  1+
                 </div>
                 <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">Years Experience</div>
               </div>
               <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 text-center border border-white/20 dark:border-gray-700/30 hover:scale-105 transition-all duration-300">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-1 sm:mb-2">
-                  50+
+                  3+
                 </div>
                 <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">Projects Done</div>
               </div>
