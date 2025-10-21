@@ -94,11 +94,10 @@ export const Home = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <button
                 onClick={() => setActiveSkillTab("frontend")}
-                className={`group relative px-6 py-4 sm:px-8 sm:py-5 rounded-2xl sm:rounded-3xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 ${
-                  activeSkillTab === "frontend"
+                className={`group relative px-6 py-4 sm:px-8 sm:py-5 rounded-2xl sm:rounded-3xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 ${activeSkillTab === "frontend"
                     ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg shadow-purple-500/25"
                     : "bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-800/80"
-                } border border-white/20 dark:border-gray-700/30`}
+                  } border border-white/20 dark:border-gray-700/30`}
               >
                 <div className="flex items-center justify-center space-x-2 sm:space-x-3">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,11 +110,10 @@ export const Home = () => {
                   </svg>
                   <span>Frontend</span>
                   <span
-                    className={`text-xs sm:text-sm px-2 py-1 rounded-full ${
-                      activeSkillTab === "frontend"
+                    className={`text-xs sm:text-sm px-2 py-1 rounded-full ${activeSkillTab === "frontend"
                         ? "bg-white/20 text-white"
                         : "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400"
-                    }`}
+                      }`}
                   >
                     {portfolioConfig.skills.frontend.length}
                   </span>
@@ -124,11 +122,10 @@ export const Home = () => {
 
               <button
                 onClick={() => setActiveSkillTab("backend")}
-                className={`group relative px-6 py-4 sm:px-8 sm:py-5 rounded-2xl sm:rounded-3xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 ${
-                  activeSkillTab === "backend"
+                className={`group relative px-6 py-4 sm:px-8 sm:py-5 rounded-2xl sm:rounded-3xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 ${activeSkillTab === "backend"
                     ? "bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg shadow-blue-500/25"
                     : "bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-800/80"
-                } border border-white/20 dark:border-gray-700/30`}
+                  } border border-white/20 dark:border-gray-700/30`}
               >
                 <div className="flex items-center justify-center space-x-2 sm:space-x-3">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -141,11 +138,10 @@ export const Home = () => {
                   </svg>
                   <span>Backend</span>
                   <span
-                    className={`text-xs sm:text-sm px-2 py-1 rounded-full ${
-                      activeSkillTab === "backend"
+                    className={`text-xs sm:text-sm px-2 py-1 rounded-full ${activeSkillTab === "backend"
                         ? "bg-white/20 text-white"
                         : "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400"
-                    }`}
+                      }`}
                   >
                     {portfolioConfig.skills.backend.length}
                   </span>
@@ -154,11 +150,10 @@ export const Home = () => {
 
               <button
                 onClick={() => setActiveSkillTab("tools")}
-                className={`group relative px-6 py-4 sm:px-8 sm:py-5 rounded-2xl sm:rounded-3xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 ${
-                  activeSkillTab === "tools"
+                className={`group relative px-6 py-4 sm:px-8 sm:py-5 rounded-2xl sm:rounded-3xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 ${activeSkillTab === "tools"
                     ? "bg-gradient-to-r from-green-500 to-teal-500 text-white shadow-lg shadow-green-500/25"
                     : "bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-800/80"
-                } border border-white/20 dark:border-gray-700/30`}
+                  } border border-white/20 dark:border-gray-700/30`}
               >
                 <div className="flex items-center justify-center space-x-2 sm:space-x-3">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -177,11 +172,10 @@ export const Home = () => {
                   </svg>
                   <span>Tools</span>
                   <span
-                    className={`text-xs sm:text-sm px-2 py-1 rounded-full ${
-                      activeSkillTab === "tools"
+                    className={`text-xs sm:text-sm px-2 py-1 rounded-full ${activeSkillTab === "tools"
                         ? "bg-white/20 text-white"
                         : "bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400"
-                    }`}
+                      }`}
                   >
                     {portfolioConfig.skills.tools.length}
                   </span>
@@ -429,24 +423,8 @@ export const Home = () => {
                         className="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="absolute bottom-4 right-4 flex space-x-3">
-                          <a
-                            href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
-                          >
-                            <ExternalLink className="w-5 h-5" />
-                          </a>
-                          <a
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
-                          >
-                            <Github className="w-5 h-5" />
-                          </a>
-                        </div>
+
+
                       </div>
                     </div>
                   </div>
@@ -469,26 +447,31 @@ export const Home = () => {
                     ))}
                   </div>
 
-                  <div className="flex space-x-4">
+                  <div className={`flex ${project.githubUrl ? 'space-x-4' : ''}`}>
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 pulse-effect"
+                      className={`${project.githubUrl ? 'flex-1' : 'w-full'
+                        } group flex items-center justify-center space-x-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 pulse-effect`}
                     >
                       <ExternalLink className="w-4 h-4 group-hover:animate-bounce" />
                       <span>View Live</span>
                     </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex items-center space-x-2 glass-effect text-gray-900 dark:text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
-                    >
-                      <Github className="w-4 h-4" />
-                      <span>Source Code</span>
-                    </a>
+
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 group flex items-center justify-center space-x-2 glass-effect text-gray-900 dark:text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+                      >
+                        <Github className="w-4 h-4" />
+                        <span>Source Code</span>
+                      </a>
+                    )}
                   </div>
+
                 </div>
               </div>
             ))}

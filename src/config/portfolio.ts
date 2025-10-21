@@ -7,7 +7,7 @@ export const portfolioConfig = {
     phone: "+91 8431347468",
     location: "Hyderabad, Telangana, India",
     bio: "Frontend Developer specializing in building high-performance, responsive, and accessible web applications using React.js, Node.js, and RESTful APIs. Currently working as a Frontend Developer Intern at Zonevalue, leading the complete frontend development of a B2B real estate portal. Experienced in translating complex business requirements into intuitive UI, integrating APIs for dynamic data, and ensuring cross-browser compatibility. Collaborates closely with senior backend developers using Python/Django to deliver seamless end-to-end solutions. Skilled in state management (Redux/Context API), component-driven architecture, and performance optimization. Strong collaboration skills, working with UX designers, backend engineers, and product managers in Agile environments to deliver scalable solutions.",
-    resumeUrl: "https://drive.google.com/uc?export=download&id=1ocj0hj4h0DceDWQtjZ-ZlMlTNuelDodK",
+    resumeUrl: "https://drive.google.com/file/d/1ujKyYv5JjvjPccV0tElwnAnBtvsmqa2F/view?usp=sharing",
     profileImage: "https://i.postimg.cc/3R9HR4Z3/1718556093974.jpg",
     shortBio: "Passionate Frontend Developer skilled in React.js, Node.js, and modern web technologies, building user-centric and scalable applications."
   },
