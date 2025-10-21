@@ -11,8 +11,8 @@ export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const categories = ['All', ...Array.from(new Set(portfolioConfig.projects.map(p => p.category)))];
-  const filteredProjects = activeFilter === 'All' 
-    ? portfolioConfig.projects 
+  const filteredProjects = activeFilter === 'All'
+    ? portfolioConfig.projects
     : portfolioConfig.projects.filter(p => p.category === activeFilter);
 
   useEffect(() => {
@@ -61,17 +61,15 @@ export const Projects = () => {
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <div className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 mr-4">
-            <Filter className="w-5 h-5" />
           </div>
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => handleFilterChange(category)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                activeFilter === category
-                  ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-purple-100 dark:hover:bg-purple-900/30 shadow-md'
-              }`}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeFilter === category
+                ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg'
+                : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-purple-100 dark:hover:bg-purple-900/30 shadow-md'
+                }`}
             >
               {category}
             </button>
@@ -93,24 +91,8 @@ export const Projects = () => {
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 right-4 flex space-x-3">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a>
-                  </div>
+
+
                 </div>
                 {project.featured && (
                   <div className="absolute top-4 left-4">
@@ -149,30 +131,37 @@ export const Projects = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex space-x-4">
+                <div className={`flex ${project.githubUrl ? 'space-x-4' : ''}`}>
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 group/btn bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+                    className={`${project.githubUrl ? 'flex-1' : 'w-full'
+                      } group/btn bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-center`}
                   >
                     <span className="flex items-center justify-center space-x-2">
                       <ExternalLink className="w-4 h-4 group-hover/btn:animate-bounce" />
                       <span>View Live</span>
                     </span>
                   </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 group/btn bg-white dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-xl font-semibold border-2 border-gray-200 dark:border-gray-600 hover:border-purple-400 hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
-                  >
-                    <span className="flex items-center justify-center space-x-2">
-                      <Github className="w-4 h-4" />
-                      <span>Code</span>
-                    </span>
-                  </a>
+
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 group/btn bg-white dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-xl font-semibold border-2 border-gray-200 dark:border-gray-600 hover:border-purple-400 hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+                    >
+                      <span className="flex items-center justify-center space-x-2">
+                        <Github className="w-4 h-4" />
+                        <span>Code</span>
+                      </span>
+                    </a>
+                  )}
                 </div>
+
+
+
               </div>
             </div>
           ))}

@@ -118,6 +118,17 @@ export const portfolioConfig = {
   ],
 
   projects: [
+    
+    {
+      "id": 3,
+      "title": "B2B Real Estate Portal - Internship Project",
+      "description": "Led the frontend development of a scalable B2B real estate portal using React.js and TypeScript. Built a secure User Management module with features for registration, profile updates, and authentication using protected routes. Implemented Property Posting and Admin Approval Flow for sellers to list properties (apartments, villas, plots, offices) with approval-based visibility. Developed a Lead Management system with integrated APIs for notifying property owners when users view or contact them. Integrated Redux Toolkit for centralized state management across authentication, property, and lead modules. Added Search functionality, Top Realtors, and Business Card module allowing users to create and download cards in PDF format. Collaborated with backend developers for RESTful API integration, optimized UI performance, and ensured responsive, cross-browser design.",
+      "image": "https://www.trawex.com/images/new/real-estate3.jpg",
+      "technologies": ["React.js", "TypeScript", "Tailwind CSS", "Lucide Icons", "GSAP Animation", "Redux Toolkit"],
+      "liveUrl": "https://agent.zonevalue.com/",
+      "featured": true,
+      "category": "Frontend"
+    },
     {
       id: 1,
       title: "Mini-YouTube Application",
