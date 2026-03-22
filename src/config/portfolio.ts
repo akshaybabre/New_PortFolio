@@ -1,17 +1,16 @@
 export const portfolioConfig = {
   personal: {
     name: "Akshay Babre",
-    title: "Frontend Developer",
+    title: "Full Stack MERN Developer",
     subtitle: "Building High-Performance Web Applications",
     email: "akshaybabre8@gmail.com",
     phone: "+91 8431347468",
     location: "Hyderabad, Telangana, India",
-    bio: "Frontend Developer specializing in building high-performance, responsive, and accessible web applications using React.js, Node.js, and RESTful APIs. Currently working as a Frontend Developer Intern at Zonevalue, leading the complete frontend development of a B2B real estate portal. Experienced in translating complex business requirements into intuitive UI, integrating APIs for dynamic data, and ensuring cross-browser compatibility. Collaborates closely with senior backend developers using Python/Django to deliver seamless end-to-end solutions. Skilled in state management (Redux/Context API), component-driven architecture, and performance optimization. Strong collaboration skills, working with UX designers, backend engineers, and product managers in Agile environments to deliver scalable solutions.",
-    resumeUrl: "https://drive.google.com/file/d/1ujKyYv5JjvjPccV0tElwnAnBtvsmqa2F/view?usp=sharing",
-    profileImage: "https://i.postimg.cc/3R9HR4Z3/1718556093974.jpg",
-    shortBio: "Passionate Frontend Developer skilled in React.js, Node.js, and modern web technologies, building user-centric and scalable applications."
+    bio: "Full Stack MERN Developer with hands-on experience building scalable, production-level web applications. Currently working on a live multi-vendor e-commerce platform, developing Seller and Admin Panels with features like RBAC authentication, product management, and approval workflows. Skilled in React.js, Node.js, Express.js, MongoDB, and Redux Toolkit, with a strong focus on performance optimization, clean architecture, and real-world business logic implementation.Experienced in designing and integrating RESTful APIs, building dynamic dashboards, and developing secure authentication systems. Also worked on a B2B real estate platform, leading frontend development, integrating APIs, and collaborating with backend teams(Python/ Django) to deliver end-to-end solutions. Passionate about building efficient, scalable systems and continuously learning new technologies to solve real-world problems.",
+    resumeUrl: "https://drive.google.com/file/d/1mvLlPv6z1-_Qauw9veLnWlQkTSd_n8Ir/view?usp=sharing",
+    profileImage: "https://res.cloudinary.com/davhqkk6c/image/upload/v1774160220/Akshay_Babre_anqisf.jpg",
+    shortBio: "Passionate Full Stack MERN Developer skilled in React.js, Node.js, and modern web technologies, building scalable and production-ready applications."
   },
-
   social: {
     github: "https://github.com/akshaybabre",
     linkedin: "https://linkedin.com/in/akshaybabre",
@@ -38,122 +37,142 @@ export const portfolioConfig = {
   skills: {
     frontend: [
       { name: "HTML5", level: 90, icon: "🟠", description: "Semantic markup and accessibility" },
-      { name: "CSS3", level: 85, icon: "🎨", description: "Modern styling and animations" },
-      { name: "JavaScript (ES6+)", level: 90, icon: "💛", description: "Modern JavaScript development with ES6+ features" },
-      { name: "TypeScript", level: 80, icon: "📘", description: "Type-safe JavaScript development" },
+      { name: "CSS3", level: 85, icon: "🎨", description: "Modern styling and responsive design" },
+      { name: "JavaScript (ES6+)", level: 90, icon: "💛", description: "Modern JavaScript with ES6+ features" },
       { name: "React.js", level: 85, icon: "⚛️", description: "Component-based UI development" },
-      { name: "Redux Toolkit", level: 80, icon: "🔄", description: "Advanced state management" },
-      { name: "React Hooks", level: 80, icon: "🎣", description: "Functional component logic" },
-      { name: "Context API", level: 80, icon: "🎯", description: "React state management" },
-      { name: "Tailwind CSS", level: 75, icon: "💨", description: "Utility-first CSS framework" },
-      { name: "Material UI", level: 70, icon: "🎭", description: "React component library" },
-      { name: "Responsive Design", level: 85, icon: "📱", description: "Mobile-first responsive UIs" },
-      { name: "Accessibility (WCAG)", level: 70, icon: "♿", description: "Web accessibility standards" }
+      { name: "Next.js (Basics)", level: 60, icon: "▲", description: "Basic understanding of SSR and routing" },
+      { name: "Redux Toolkit", level: 85, icon: "🔄", description: "State management and async logic handling" },
+      { name: "Context API", level: 80, icon: "🎯", description: "Lightweight state management" },
+      { name: "Tailwind CSS", level: 80, icon: "💨", description: "Utility-first CSS framework" },
+      { name: "Material UI", level: 75, icon: "🎭", description: "Pre-built UI components" },
+      { name: "Responsive Design", level: 85, icon: "📱", description: "Mobile-first responsive layouts" }
     ],
+
     backend: [
-      { name: "Node.js", level: 60, icon: "🟢", description: "Server-side JavaScript runtime" },
-      { name: "Express.js", level: 60, icon: "🚀", description: "Web framework for Node.js" },
-      { name: "MongoDB", level: 60, icon: "🍃", description: "NoSQL database management" },
-      { name: "RESTful APIs", level: 75, icon: "🌐", description: "API design and integration" },
-      { name: "Axios", level: 70, icon: "📡", description: "Promise-based HTTP client" }
+      { name: "Node.js", level: 80, icon: "🟢", description: "Backend development and API handling" },
+      { name: "Express.js", level: 80, icon: "🚀", description: "REST API development with middleware" },
+      { name: "MongoDB", level: 80, icon: "🍃", description: "NoSQL database design and queries" },
+      { name: "RESTful APIs", level: 85, icon: "🌐", description: "API design, integration, and optimization" },
+      { name: "JWT Authentication", level: 80, icon: "🔐", description: "Secure authentication and authorization" },
+      { name: "RBAC", level: 75, icon: "🛡️", description: "Role-based access control implementation" }
     ],
+
     tools: [
-      { name: "Git", level: 80, icon: "📂", description: "Version control and collaboration" },
-      { name: "GitHub", level: 80, icon: "🐱", description: "Code repository and project management" },
-      { name: "Postman", level: 70, icon: "📮", description: "API development and testing" },
-      { name: "Netlify", level: 70, icon: "🌐", description: "Static site deployment" },
-      { name: "Render", level: 70, icon: "🚀", description: "Full-stack app hosting" },
-      { name: "CI/CD Pipelines", level: 65, icon: "🔄", description: "Continuous integration and deployment" }
+      { name: "Git", level: 85, icon: "📂", description: "Version control and collaboration" },
+      { name: "GitHub", level: 85, icon: "🐱", description: "Repository management and teamwork" },
+      { name: "Postman", level: 80, icon: "📮", description: "API testing and debugging" },
+      { name: "Render", level: 75, icon: "🚀", description: "Full-stack deployment platform" },
+      { name: "Hostinger", level: 70, icon: "🌐", description: "Web hosting and deployment" },
+      { name: "CI/CD Pipelines", level: 70, icon: "🔄", description: "Automated build and deployment workflows" }
     ],
-    libraries: [
-      { name: "Redux", level: 80, icon: "🔄", description: "State management library" },
-      { name: "Context API", level: 80, icon: "🎯", description: "React state management" },
-      { name: "Material UI", level: 70, icon: "🎭", description: "React component library" },
-      { name: "Framer Motion", level: 70, icon: "✨", description: "Animation library for React" },
-      { name: "Next.js", level: 60, icon: "▲", description: "React framework for production" }
+
+    Concepts: [
+      { name: "API Integration", level: 85, icon: "🔗", description: "Connecting frontend with backend services" },
+      { name: "Payment Integration (Razorpay - Basics)", level: 65, icon: "💳", description: "Basic payment gateway integration" },
+      { name: "Web Security Basics", level: 75, icon: "🔒", description: "Authentication, validation, and security practices" },
+      { name: "Performance Optimization", level: 80, icon: "⚡", description: "Improving app speed and efficiency" },
+      { name: "Clean Code", level: 85, icon: "🧹", description: "Readable, maintainable, and scalable code" }
     ]
   },
 
   stats: {
     experience: "1+",
-    projects: "2+",
-    technologies: "20+",
+    projects: "6+",
+    technologies: "22+",
     successRate: "100%"
   },
 
   experience: [
     {
-      title: "Frontend Developer Intern",
-      company: "Zonevalue",
-      period: "July 2025 - Present",
-      location: "Gurugram, India",
+      title: "Full Stack Developer (MERN)",
+      company: "Dexterous Technology",
+      period: "Nov 2025 - Present",
+      location: "Hyderabad, India",
+      type: "Full-time",
+      description: [
+        "Working on a production-level multi-vendor e-commerce platform, developing Seller and Admin Panels using the MERN stack.",
+
+        "Designed and implemented seller onboarding and approval workflows, ensuring secure and compliant user access.",
+
+        "Developed dynamic product listing system supporting simple and variable products with category-based attributes and inventory management.",
+
+        "Built and integrated RESTful APIs, improving backend communication and optimizing performance.",
+
+        "Implemented RBAC authentication, enabling secure role-based access for sellers and admins.",
+
+        "Optimized application performance, handled bug fixes, and collaborated with senior developers in a real-world production environment."
+      ],
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "REST APIs", "JWT", "RBAC"]
+    },
+
+    {
+      title: "MERN Stack Intern",
+      company: "ZoneValue",
+      period: "Jul 2025 - Oct 2025",
+      location: "Remote",
       type: "Internship",
       description: [
-        "Leading the complete frontend development of a B2B real estate portal using React.js and TypeScript.",
-        "User Management Module: Developed features for user registration, profile updates, and authentication with protected routes.",
-        "Property Posting & Approval Flow: Implemented property listing system where users can post properties, receive confirmation emails, and have listings approved by admin before going live.",
-        "Lead Management: Built a lead generation feature—when a property is approved and made public, interested users trigger a lead notification to the property owner.",
-        "Integrated RESTful APIs with backend (Python/Django) for dynamic data rendering.",
-        "Built email notification system for property posting and approval status updates.",
-        "Created responsive UI components, optimized performance, and ensured accessibility compliance.",
-        "Collaborated with backend developers, participated in Agile sprints, and managed code using Git and CI/CD pipelines."
+        "Worked on a real-world B2B real estate platform, contributing to frontend development using React.js and Tailwind CSS.",
+
+        "Developed multi-step forms, dashboards, and user interfaces with efficient state management using Redux Thunk.",
+
+        "Integrated RESTful APIs for dynamic data rendering and seamless user experience.",
+
+        "Collaborated with backend developers to deliver production-ready features in an Agile environment.",
+
+        "Improved UI performance, responsiveness, and cross-browser compatibility."
       ],
-      technologies: ["React.js", "TypeScript", "RESTful APIs", "Python/Django", "Git", "CI/CD", "Agile"]
-    },
-    {
-      title: "MERN Stack Training",
-      company: "NareshIT",
-      period: "2024 - 2025",
-      location: "Hyderabad, India",
-      type: "Training",
-      description: [
-        "Completed comprehensive full-stack web development training program",
-        "Gained hands-on experience with MongoDB, Express.js, React.js, and Node.js",
-        "Built multiple projects demonstrating MERN stack proficiency",
-        "Learned industry best practices for web development and deployment",
-        "Participated in code reviews and collaborative development exercises"
-      ],
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "JavaScript", "HTML5", "CSS3"]
+      technologies: ["React.js", "Redux Thunk", "Tailwind CSS", "REST APIs", "JavaScript"]
     }
   ],
 
   projects: [
-    
-    {
-      "id": 3,
-      "title": "B2B Real Estate Portal - Internship Project",
-      "description": "Led the frontend development of a scalable B2B real estate portal using React.js and TypeScript. Built a secure User Management module with features for registration, profile updates, and authentication using protected routes. Implemented Property Posting and Admin Approval Flow for sellers to list properties (apartments, villas, plots, offices) with approval-based visibility. Developed a Lead Management system with integrated APIs for notifying property owners when users view or contact them. Integrated Redux Toolkit for centralized state management across authentication, property, and lead modules. Added Search functionality, Top Realtors, and Business Card module allowing users to create and download cards in PDF format. Collaborated with backend developers for RESTful API integration, optimized UI performance, and ensured responsive, cross-browser design.",
-      "image": "https://www.trawex.com/images/new/real-estate3.jpg",
-      "technologies": ["React.js", "TypeScript", "Tailwind CSS", "Lucide Icons", "GSAP Animation", "Redux Toolkit"],
-      "liveUrl": "https://agent.zonevalue.com/",
-      "featured": true,
-      "category": "Frontend"
-    },
+
     {
       id: 1,
-      title: "Mini-YouTube Application",
-      description: "Developed a Scalable 3-Tier Full-Stack App: Built Mini-YouTube with a React frontend, Node.js backend, and MongoDB database, ensuring modularity and scalability. Enhanced Frontend with React and TypeScript: Created a responsive and dynamic UI using React.js, TypeScript, and Tailwind CSS, delivering seamless video browsing, liking/disliking, and watchlist features. Optimized State Management with Redux: Leveraged Redux for robust state synchronization in React, fixing Like/Dislike glitches and improved video interaction response time by 15%, reducing UX complaints. Robust Backend with RESTful APIs: Designed a secure backend using Node.js, Express.js, and Mongoose, integrating Firebase/JWT for authentication and admin routes for content management.",
-      image: "https://images.unsplash.com/photo-1649180543887-158357417159?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8eW91dHViZSUyMGxvZ298ZW58MHx8MHx8fDA%3D",
-      technologies: ["React.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS", "Framer Motion", "Redux", "Express.js", "JWT", "Firebase"],
-      liveUrl: "https://mini-youtube-frontend.onrender.com",
-      githubUrl: "https://github.com/akshaybabre/Mini_YouTube_Application",
+      title: "Multi-Vendor E-commerce Platform (Seller Panel)",
+      description: "Built a production-level Seller Panel for a multi-vendor e-commerce platform using the MERN stack. Developed multi-step seller onboarding with GSTIN verification and admin approval flow. Implemented RBAC-based authentication, dynamic product listing (simple & variable), and real-time dashboard with revenue and order metrics. Designed and integrated RESTful APIs, optimized performance, and implemented SKU/HSN generation, SEO automation, and inventory management.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "REST APIs", "JWT", "RBAC"],
+      liveUrl: "https://seller.ewshopping.com/",
+      featured: true,
+      category: "Full Stack"
+    },
+
+    {
+      id: 2,
+      title: "Multi-Vendor E-commerce Platform (Admin Panel)",
+      description: "Developed Admin Panel to manage categories, sellers, brands, and product approvals. Implemented seller verification and approval workflows, brand validation system, and product publishing flow. Integrated RBAC for secure admin operations and contributed to performance optimization, bug fixes, and scalable system improvements.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "REST APIs", "RBAC"],
+      liveUrl: "https://admin.ewshopping.com/",
       featured: true,
       category: "Full Stack"
     },
     {
-      id: 2,
+      id: 3,
+      title: "Mini YouTube Application",
+      description: "Developed a full-stack video streaming platform with React.js, Node.js, and MongoDB. Implemented authentication, video interactions (like/dislike), and state management using Redux. Designed REST APIs and optimized performance for smooth user experience.",
+      image: "https://images.unsplash.com/photo-1649180543887-158357417159",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux", "JWT"],
+      liveUrl: "https://mini-youtube-frontend.onrender.com",
+      githubUrl: "https://github.com/akshaybabre/Mini_YouTube_Application",
+      featured: false,
+      category: "Full Stack"
+    },
+    {
+      id: 4,
       title: "Social Media Application",
-      description: "Developed a scalable full-stack social media platform with user authentication, post creation, liking, commenting, and friend management using React.js for a dynamic UI. Integrated RESTful APIs with Node.js, Express.js, and MongoDB Atlas, securing data handling with JWT authentication and 99% uptime on Render deployment. Optimized performance with Redux, reducing interaction response time by 15%, and enhanced security with robust API validation. Designed reusable components and implemented responsive design, improving cross-browser compatibility and user experience. Utilized GitHub for version control and CI/CD pipelines, streamlining development and deployment processes.",
+      description: "Built a full-stack social media platform with user authentication, post creation, likes, and comments. Integrated RESTful APIs with secure JWT authentication and implemented responsive UI with reusable components.",
       image: "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/08/some-3d-social-media-icons.jpg",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "MUI", "Redux", "JWT"],
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux", "JWT"],
       liveUrl: "https://social-media-frontend-bf86.onrender.com",
       githubUrl: "https://github.com/akshaybabre/Social-Media-Application",
-      featured: true,
+      featured: false,
       category: "Full Stack"
     }
+
   ],
-
-
   blogs: [
     {
       id: 1,

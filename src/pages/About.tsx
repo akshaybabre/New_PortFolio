@@ -74,7 +74,7 @@ export const About = () => {
     { key: 'frontend', label: 'Frontend', icon: '🎨', color: 'from-purple-500 to-pink-500' },
     { key: 'backend', label: 'Backend', icon: '⚙️', color: 'from-blue-500 to-indigo-500' },
     { key: 'tools', label: 'Tools', icon: '🛠️', color: 'from-green-500 to-teal-500' },
-    { key: 'libraries', label: 'Libraries', icon: '📚', color: 'from-orange-500 to-red-500' }
+    { key: 'Concepts', label: 'Concepts', icon: '📚', color: 'from-orange-500 to-red-500' }
   ];
 
   const renderSkillCategory = (categoryKey: string, skills: any[], color: string) => (
