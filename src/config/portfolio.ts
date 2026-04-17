@@ -51,6 +51,8 @@ export const portfolioConfig = {
     backend: [
       { name: "Node.js", level: 80, icon: "🟢", description: "Backend development and API handling" },
       { name: "Express.js", level: 80, icon: "🚀", description: "REST API development with middleware" },
+      { name: "Python", level: 60, icon: "🐍", description: "Basic programming, OOP concepts, and scripting" },
+      { name: "FastAPI", level: 60, icon: "⚡", description: "Basic API development, request handling, and JSON responses" },
       { name: "MongoDB", level: 80, icon: "🍃", description: "NoSQL database design and queries" },
       { name: "RESTful APIs", level: 85, icon: "🌐", description: "API design, integration, and optimization" },
       { name: "JWT Authentication", level: 80, icon: "🔐", description: "Secure authentication and authorization" },
